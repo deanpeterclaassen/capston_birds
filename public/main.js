@@ -18,12 +18,13 @@ function getBirds(){
     axios.get('/bird')
     .then(res=>{
     res.data.forEach(birdList=>{
-        const speciesElement =
+        const nameElement =
         `<div>
-        <p>${species.species}  ${species.quantity}</p>
+        <p>${birdList.bird_id}    ${birdList.bird_name}</p>
         </div>`
         mainList.innerHTML +=  nameElement
 
     })
 })
 }
+getBirds()

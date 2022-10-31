@@ -19,8 +19,9 @@ module.exports={
 
         create table birdList (
             bird_id SERIAL PRIMARY KEY,
-            bird_name varchar(100) NOT NULL,
-            bird_seen boolean
+            bird_name varchar(100) UNIQUE NOT NULL,
+            bird_seen boolean,
+            UNIQUE (bird_name)
         );
         `)
         .then(() => {
