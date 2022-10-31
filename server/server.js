@@ -1,6 +1,7 @@
 const express = require('express')
 const cors = require('cors')
 const {seed} = require('./seed')
+const { addBird } = require('./controller')
 require('dotenv').config()
 
 
@@ -11,6 +12,9 @@ app.use(express.static('public'))
 app.use(express.json())
 app.use(cors())
 
+
+app.post('/seed', seed)
+app.post('/bird', addBird)
 
 
 
