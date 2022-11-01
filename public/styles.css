@@ -32,12 +32,22 @@ div{
 h2{
     text-align: center;
     background-color: darkseagreen;
+    /* position: sticky;
+    top: 10px;
+    padding: 0px; */
 }
 h3{
     text-align: center;
     background-color: darkseagreen;
+    position: sticky;
+    top: 0px;
 }
 #totalLists{
     display: flex;
     justify-content: center;
+}
+.header1{
+    position: sticky;
+    background-color: white;
+    top: 0px;
 }

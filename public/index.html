@@ -12,17 +12,27 @@
         <div id="main">
             <div id="totalLists">
             <div id="mainList">
-                <H2>My Bird Watching Life List</H2>
+                <div class="header1">
+                    <H2>My Bird Watching Life List</H2>
+                </div>
             </div>
             <div id="wishLists">
-                <h3>Wish Lists</h3>
+                <div class="header1">
+                    <h3>Wish Lists</h3>
+                </div>
+                 <ul></ul>
             </div>
         </div>
-        <form >
+        <form id="aForm">
             <input type="text" id="birdName" placeholder="Enter Bird Name" required>
             <button id="addBird">ADD</button>
         </form>
+        <form id="wForm">
+            <input type="text" id="addTo" placeholder="Enter Name Here">
+            <button id="addToButton">ADD TO WISH LIST</button>
+        </form>
         </div>
+
 
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
