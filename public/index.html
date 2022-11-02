@@ -8,30 +8,58 @@
     <title>I love Birds</title>
 </head>
 <header>Bird Watching List Maker</header>
+
 <body>
-        <div id="main">
-            <div id="totalLists">
-            <div id="mainList">
-                <div class="header1">
-                    <H2>My Bird Watching Life List</H2>
+    <div id="mainContent">
+        <div id="lifeCount">
+            
+        </div>
+             <div id="main">
+                    <div class="seen">
+                        <div class="addBird">
+                            <img src="thumbs_amazing-beautiful-bluebird-header.jpg" >
+                            <h2 class="inputHeader">Enter Birds You've Seen Here</h2>
+                            <div class="addBirdInput">
+                            <form id ="aForm">
+                            <input type="text" id="bName">
+                            <button>ADD BIRD</button>
+                            </form>
+                            </div>
+                        </div>
+                        <div id="mainList">
+                            <div class="header1">
+                                <H2 id="listHeader">My Bird Watching Life List</H2>
+            
+                            </div>
+            
+                        </div>
+
+                    </div>
+                
+           <div id="unseen">     
+            <div class="addBird">
+                <img src="ezgif-5-3acfb5e776.jpg" >
+                <h2 class="inputHeader">Enter Birds You Wish To See Here</h2>
+                <div class="addBirdInput">
+                <form id ="wForm">
+                <input type="text" id="addTo">
+                <button>ADD BIRD</button>
+                </form>
                 </div>
             </div>
             <div id="wishLists">
                 <div class="header1">
-                    <h3>Wish Lists</h3>
+                    <h2 id="listHeader">Wish Lists</h2>
+
                 </div>
-                 <ul></ul>
+
             </div>
         </div>
-        <form id="aForm">
-            <input type="text" id="birdName" placeholder="Enter Bird Name" required>
-            <button id="addBird">ADD</button>
-        </form>
-        <form id="wForm">
-            <input type="text" id="addTo" placeholder="Enter Name Here">
-            <button id="addToButton">ADD TO WISH LIST</button>
-        </form>
         </div>
+    </div>
+
+
+        
 
 
 

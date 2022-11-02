@@ -1,53 +1,134 @@
 header{
-    position: relative;
+    position: static;
     text-align: center;
     background-color: darkseagreen;
     font-size: 32pt;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    margin-bottom: 1vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+
+
 }
-div{
+body{
+    background-image: url(6276023.jpg) ;
+    background-size: 100%;
+
+}
+.addBird{
+    display: block;
     border: 5px solid black;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: rgb(254, 250, 224) ;
+    scale: .75;
+
 }
-#main{
+.addBird:hover{
+    box-shadow: 5px 5px grey;
+}
+button{
+    background-color:darkseagreen;
+    border: none;
+    border-radius: 25px;
+    height: 5vh;
+}
+button:hover{
+    background-color: rgb(188, 108, 37);
+    box-shadow: 2px 2px gray;
+}
+.addBut{
+    position: absolute;
+    right: 10px;
+}
+img{
+    margin-bottom: 10px;
+}
+.addBirdInput{
+    display: flex;
+    justify-content: center;
+}
+#bName{
+    Width: 300px;
+    height: 5vh;
+    border-radius: 1vh;
+    font-size: 25px;
+}
+#addTo{
+    Width: 300px;
+    height: 5vh;
+    border-radius: 1vh;
+    font-size: 25px;
+}
+.seen{
     
-    height: 95vh;
+    height: fit-content;
     width: auto;
     display: block;
+    margin-right: 1vh;
+    
+    
+    
+}
+#main{
+    display: flex;
     justify-content: center;
-    
-    
 }
 #mainList{
     height: 60vh;
-    width: 50%;
+    width: auto;
     display: block;
     overflow-y: scroll;
+    background-color: white;
+    border: 5px solid black;
+    
 }
 #wishLists{
     height: 60vh;
-    width: 20%;
+    width: auto;
     overflow-y: scroll;
+    background-color: white;
+    border: 5px solid black;
 }
-h2{
+#listHeader{
     text-align: center;
     background-color: darkseagreen;
-    /* position: sticky;
-    top: 10px;
-    padding: 0px; */
+    
 }
+
 h3{
     text-align: center;
     background-color: darkseagreen;
     position: sticky;
     top: 0px;
 }
-#totalLists{
-    display: flex;
-    justify-content: center;
+#unseen{
+    display: block;
+    margin-left: 1vh;
 }
 .header1{
     position: sticky;
     background-color: white;
     top: 0px;
 }
+.birdElm{
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid gray;
+}
+p{
+    margin-right: 50px;
+}
+
+.forms{
+    height: fit-content;
+    display: block;
+}
+.inputHeader{
+    text-align: center;
+}
+
+
+
+  

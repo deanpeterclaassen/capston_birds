@@ -37,11 +37,16 @@ module.exports={
     addList: (req,res)=>{
         const {name} = req.body;
         sequelize.query(`insert into birdList (bird_name,bird_seen)
-        values('${name})',false) ON CONFLICT (bird_name)
+        values('${name}',false) ON CONFLICT (bird_name)
         DO NOTHING;`)
         .then(dbRes => res.status(200).send(dbRes[0]))
         .catch(err => console.log(err))
 
+    },
+    countBirds: (req,res)=>{
+        sequelize.query(`Select Count(*) From birdList Where bird_seen = true;`)
+        .then(dbRes => res.status(200).send(dbRes[0]))
+        .catch(err => console.log(err))
     },
     markBirdAsSeen: (req,res)=>{
         let {bird_id} = req.body;

@@ -1,7 +1,7 @@
 const express = require('express')
 const cors = require('cors')
 const {seed} = require('./seed')
-const { addBird, getBirds, addList, getWishBirds, markBirdAsSeen, deleteBird } = require('./controller')
+const { addBird, getBirds, addList, getWishBirds, markBirdAsSeen, deleteBird, countBirds } = require('./controller')
 require('dotenv').config()
 
 
@@ -23,6 +23,8 @@ app.get('/wish', getWishBirds)
 
 app.put('/bird/seen',markBirdAsSeen)
 app.put('/bird/delete', deleteBird)
+
+app.get('/count', countBirds)
 
 const port = process.env.PORT || 5678
 app.listen(port, console.log(`Server running on ${port}`))
