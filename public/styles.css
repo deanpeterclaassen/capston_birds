@@ -16,7 +16,7 @@ footer{
 }
 body{
     background-image: url(6276023.jpg) ;
-    background-size: 100%;
+    background-size:cover
 
 }
 .addBird{
@@ -27,6 +27,8 @@ body{
     border-radius: 25px;
     background-color: rgb(254, 250, 224) ;
     scale: .75;
+    
+    
 
 }
 .addBird:hover{
@@ -67,22 +69,18 @@ img{
     border-radius: 1vh;
     font-size: 25px;
 }
-.seen{
-    
+.seen{ 
     height: fit-content;
     width: auto;
     display: block;
     margin-right: 1vh;
-    
-    
-    
 }
 #main{
     display: flex;
     justify-content: center;
 }
 #mainList{
-    height: 60vh;
+    height: 35vh;
     width: auto;
     display: block;
     overflow-y: scroll;
@@ -91,8 +89,9 @@ img{
     
 }
 #wishLists{
-    height: 60vh;
+    height: 35vh;
     width: auto;
+    display: block;
     overflow-y: scroll;
     background-color: rgb(254, 250, 224);
     border: 5px solid black;
@@ -112,6 +111,8 @@ h3{
 #unseen{
     display: block;
     margin-left: 1vh;
+    height: fit-content;
+    width: auto;
 }
 .header1{
     position: sticky;
@@ -147,7 +148,23 @@ p{
     padding: 10px;
 
 }
+.randomImg{
+    width: inherit;
+    height: auto;
+    display: flex;
+    
 
+}
+.randomImg1{
+    width: inherit;
+    height: auto;
+    display: flex;
+    
+
+}
+img{
+    width: 436px;
+}
 
 
   

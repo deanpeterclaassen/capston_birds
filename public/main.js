@@ -6,7 +6,9 @@ const wForm = document.querySelector('#wForm')
 const addTo = document.querySelector('#addTo')
 const addButton = document.querySelector('#addBird')
 const num = document.querySelector('#lifeCount')
-
+const rImg = document.querySelector('.randomImg')
+const rImg1 = document.querySelector('.randomImg1')
+const count = document.querySelector('.lifeCount')
 aForm.addEventListener('submit',(e)=>{
 
     e.preventDefault();
@@ -76,8 +78,8 @@ function getLifeCount(){
     .then(res=>{
         res.data.forEach(birdList=>{
         const numElm =
-        `<h2>You Life List Count is:  ${birdList.count}</h2>`
-        num.innerHTML += numElm
+        `${birdList.count}`
+        count.innerHTML += numElm
     })
 })
 }
@@ -96,6 +98,24 @@ function getBirds(){
     })
 })
 }
+ function randomImg(){
+    let images = ["1.jpg",'2.jpg','3.jpg','4.jpg'];
+    let size = images.length
+    let i = Math.floor(size*Math.random());
+    console.log(images[i])
+    const img = `<img src="${images[i]}"> `
+    rImg.innerHTML += img 
+ }
+ function randomImg1(){
+    let images = ["1.jpg",'2.jpg','3.jpg','4.jpg'];
+    let size = images.length
+    let i = Math.floor(size*Math.random());
+    console.log(images[i])
+    const img = `<img src="${images[i]}"> `
+    rImg1.innerHTML += img 
+ }
+ randomImg()
+ randomImg1()
 getLifeCount()
 getBirds()
 getWishBirds()
