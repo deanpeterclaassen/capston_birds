@@ -1,7 +1,8 @@
 const express = require('express')
 const cors = require('cors')
 const {seed} = require('./seed')
-const { addBird, getBirds, addList, getWishBirds, markBirdAsSeen, deleteBird, countBirds } = require('./controller')
+const { addBird, getBirds, addList, getWishBirds, markBirdAsSeen, deleteBird, countBirds,
+getHtml, getCss, getJS } = require('./controller')
 require('dotenv').config()
 
 
@@ -11,6 +12,10 @@ const app = express()
 app.use(express.static('public'))
 app.use(express.json())
 app.use(cors())
+
+app.get('/', getHtml)
+app.get('/css', getCss)
+app.get('/js', getJS)
 
 
 app.post('/seed', seed)

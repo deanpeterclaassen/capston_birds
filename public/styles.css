@@ -7,7 +7,12 @@ header{
     padding-top: 1vh;
     padding-bottom: 1vh;
 
-
+}
+footer{
+    position: static;
+    text-align: center;
+    background-color: darkseagreen;
+    font-size: 16pt;
 }
 body{
     background-image: url(6276023.jpg) ;
@@ -26,6 +31,8 @@ body{
 }
 .addBird:hover{
     box-shadow: 5px 5px grey;
+    box-shadow:
+    0 0 60px 30px rgb(219, 219, 134)
 }
 button{
     background-color:darkseagreen;
@@ -79,7 +86,7 @@ img{
     width: auto;
     display: block;
     overflow-y: scroll;
-    background-color: white;
+    background-color: rgb(254, 250, 224);
     border: 5px solid black;
     
 }
@@ -87,7 +94,7 @@ img{
     height: 60vh;
     width: auto;
     overflow-y: scroll;
-    background-color: white;
+    background-color: rgb(254, 250, 224);
     border: 5px solid black;
 }
 #listHeader{
@@ -119,6 +126,7 @@ h3{
 }
 p{
     margin-right: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 .forms{
@@ -127,6 +135,17 @@ p{
 }
 .inputHeader{
     text-align: center;
+}
+#lifeCount{
+    display: block;
+    border: 5px solid black;
+    width: fit-content;
+    border-radius: 25px;
+    background-color: rgb(254, 250, 224);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+
 }
 
 

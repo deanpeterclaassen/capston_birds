@@ -11,6 +11,15 @@ const sequelize = new Sequelize(DATA_BASE_URL, {
     }
 })
 module.exports={
+    getHtml: (req,res)=>{
+        res.sendFile(path.join(__dirname,'../public/index.html'))
+    },
+    getCss: (req,res)=>{
+        res.sendFile(path.join(__dirname,'../public/styles.css'))
+    },
+    getJS: (req,res)=>{
+        res.sendFile(path.join(__dirname,'../public/main.js'))
+    },
     addBird: (req,res)=>{
         const{name} = req.body;
         sequelize.query(`insert into birdList(bird_name,bird_seen)

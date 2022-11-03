@@ -50,7 +50,8 @@ function deleteBird(id){
     const deleteBird = document.querySelector(selectedBird)
     deleteBird.remove()
     axios.put(`/bird/delete`,{bird_id: id})
-    
+    .then(()=>{
+    location.reload()})
     .catch(err => console.log('delete bird failed', err))
 
 }
@@ -73,12 +74,14 @@ function getWishBirds(){
 function getLifeCount(){
     axios.get('/count')
     .then(res=>{
-        const data = res.data
+        res.data.forEach(birdList=>{
         const numElm =
-        `<h2>${data}</h2>`
+        `<h2>You Life List Count is:  ${birdList.count}</h2>`
         num.innerHTML += numElm
     })
+})
 }
+
 function getBirds(){
     
     axios.get('/bird')
