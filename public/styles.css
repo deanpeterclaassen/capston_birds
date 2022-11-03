@@ -9,15 +9,28 @@ header{
 
 }
 footer{
-    position: static;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     text-align: center;
     background-color: darkseagreen;
     font-size: 16pt;
+  
 }
+
 body{
     background-image: url(6276023.jpg) ;
-    background-size:cover
+    background-size:cover;
+    min-height: 100%;
+    width: auto;
+    margin: 0;
 
+}
+h3{
+    position: fixed;
+    bottom: auto;
+    margin-bottom: 0%;
+    
 }
 .addBird{
     display: block;
