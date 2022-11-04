@@ -19,12 +19,17 @@ footer{
 }
 
 body{
-    background-image: url(6276023.jpg) ;
-    background-size:cover;
+
     min-height: 100%;
     width: auto;
     margin: 0;
 
+}
+html{background: url(6276023.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 h3{
     position: fixed;
