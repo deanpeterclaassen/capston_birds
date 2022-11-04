@@ -9,7 +9,7 @@
   },
   "name": "capstone2",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server/server.js",
   "engines": {
     "node": "16.17.0"},
   "scripts": {
